@@ -9,25 +9,25 @@
 										nuget\nuget.proj;
 										tools\drop.proj;
 										 ">
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</NightlyProjects>
 		<NightlyProjects Include="samples\samples.proj">
 			<Targets>DeployableArchive</Targets>
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</NightlyProjects>
 		<NightlyProjects Include="doc\doc.proj">
 			<Targets>DeployableArchive</Targets>
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</NightlyProjects>
 
 		<ProjectsToClean Include="
 		                          $(SolutionPath);
 		                          samples\samples.proj;
 		                          ">
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</ProjectsToClean>
 		<ProjectsToClean Include="doc\doc.proj">
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</ProjectsToClean>
 
 		<DirectoriesToClean Include="
@@ -44,11 +44,11 @@
 
 		<ProjectsToPublish Include="doc\doc.proj">
 			<Targets>Publish</Targets>
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</ProjectsToPublish>
 		<ProjectsToPublish Include="samples\samples.proj">
 			<Targets>Publish</Targets>
-			<Properties>TargetFrameworkVersion=v4.5</Properties>
+			<Properties>TargetFrameworkVersion=v4.8</Properties>
 		</ProjectsToPublish>
 	</ItemGroup>
 

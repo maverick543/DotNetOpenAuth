@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<ProductName>DotNetOpenAuth</ProductName>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
 		<DisableFastUpToDateCheck>false</DisableFastUpToDateCheck>
 		<DropsRoot>$(ProjectRoot)drops\$(TargetFrameworkVersion)\$(Configuration)\</DropsRoot>
 		<OutputPath>$(ProjectRoot)bin\$(TargetFrameworkVersion)\$(Configuration)\</OutputPath>

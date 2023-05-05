@@ -21,7 +21,7 @@ namespace DotNetOpenAuth.OAuth2 {
 	using DotNetOpenAuth.Logging;
 	using DotNetOpenAuth.Messaging;
 	using DotNetOpenAuth.OAuth2.Messages;
-	using Validation;
+    using Validation;
 
 	/// <summary>
 	/// An OAuth 2.0 consumer designed for web applications.

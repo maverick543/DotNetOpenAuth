@@ -5,7 +5,7 @@
 
 	<Target Name="LayoutDependencies">
 		<MSBuild Projects="@(ProductProjects)"
-		         Properties="TargetFrameworkVersion=v4.5"
+		         Properties="TargetFrameworkVersion=v4.8"
 		         Targets="Build"
 		         BuildInParallel="$(BuildInParallel)" />
 	</Target>
@@ -15,12 +15,12 @@
 		     so that these builds can be executed in parallel. -->
 		<ItemGroup>
 			<ProjectsToBuild Include="$(ProjectRoot)samples\samples.proj">
-				<Properties>TargetFrameworkVersion=v4.5</Properties>
+				<Properties>TargetFrameworkVersion=v4.8</Properties>
 			</ProjectsToBuild>
 
 			<!-- Sandcastle doesn't seem to be able to handle .NET 4.0 dependencies right now. -->
 			<ProjectsToBuild Include="$(ProjectRoot)doc\doc.proj">
-				<Properties>TargetFrameworkVersion=v4.5</Properties>
+				<Properties>TargetFrameworkVersion=v4.8</Properties>
 			</ProjectsToBuild>
 		</ItemGroup>
 		<MSBuild Projects="@(ProjectsToBuild)"

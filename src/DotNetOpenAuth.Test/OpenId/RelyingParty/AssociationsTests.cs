@@ -20,7 +20,7 @@ namespace DotNetOpenAuth.Test.OpenId.RelyingParty {
 		private byte[] sha1Secret;
 		private Associations assocs;
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public override void SetUp() {
 			this.sha1Secret = new byte[sha1.HashSize / 8];
 			this.assocs = new Associations();

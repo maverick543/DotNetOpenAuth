@@ -11,7 +11,7 @@
 		<MSBuild
 			Projects="@(ProductProjects)"
 			Targets="@(ProductTargets)"
-			Properties="TargetFrameworkVersion=v4.5"
+			Properties="TargetFrameworkVersion=v4.8"
 			BuildInParallel="$(BuildInParallel)">
 			<Output TaskParameter="TargetOutputs" ItemName="TargetOutputs45"/>
 		</MSBuild>

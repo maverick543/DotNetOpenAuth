@@ -21,7 +21,6 @@ namespace DotNetOpenAuth.Test.Messaging.Bindings {
 
 	[TestFixture]
 	public class StandardReplayProtectionBindingElementTests : MessagingTestBase {
-		private Protocol protocol;
 		private StandardReplayProtectionBindingElement nonceElement;
 		private IReplayProtectedProtocolMessage message;
 		private INonceStore nonceStore;
@@ -30,7 +29,6 @@ namespace DotNetOpenAuth.Test.Messaging.Bindings {
 		public override void SetUp() {
 			base.SetUp();
 
-			this.protocol = Protocol.Default;
 			this.nonceStore = new MemoryNonceStore(TimeSpan.FromHours(3));
 			this.nonceElement = new StandardReplayProtectionBindingElement(this.nonceStore);
 			this.nonceElement.Channel = new Mocks.TestChannel();
